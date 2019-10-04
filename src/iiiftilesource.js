@@ -370,7 +370,7 @@ $.extend( $.IIIFTileSource.prototype, $.TileSource.prototype, /** @lends OpenSea
             if ( isv1 || levelWidth !== this.width ) {
                 iiifSize = levelWidth + ",";
             } else {
-                iiifSize = "max";
+                iiifSize = "full";
             }
             iiifRegion = 'full';
         } else {
@@ -385,7 +385,7 @@ $.extend( $.IIIFTileSource.prototype, $.TileSource.prototype, /** @lends OpenSea
             }
             iiifSizeW = Math.ceil( iiifTileW * scale );
             if ( (!isv1) && iiifSizeW === this.width ) {
-                iiifSize = "max";
+                iiifSize = "full";
             } else {
                 iiifSize = iiifSizeW + ",";
             }
